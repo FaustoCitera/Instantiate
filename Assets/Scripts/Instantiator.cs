@@ -8,10 +8,12 @@ public class Instantiator : MonoBehaviour
 
 	public void CloneObject()
 	{
-		Instantiate(objectToClone);
-		Instantiate(objectToClone);
-		Instantiate(objectToClone);
-		Instantiate(objectToClone);
-		Instantiate(objectToClone);
+		int cont = 0;
+		while (cont<3)
+		{
+			Instantiate(objectToClone);
+			Debug.Log("Clonaste un cubo");
+			cont++;
+		}
 	}
 }
